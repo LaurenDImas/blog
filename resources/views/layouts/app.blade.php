@@ -36,7 +36,7 @@
                         @guest
                             <li><a class="nav-link" href="{{ url('/') }}">Home</a></li>
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            {{-- <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li> --}}
                         @else
                             @role('Admin')
                             <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>
