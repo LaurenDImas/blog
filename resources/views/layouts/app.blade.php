@@ -36,9 +36,10 @@
                         @guest
                             <li><a class="nav-link" href="{{ url('/') }}">Home</a></li>
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
-                            <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>
                             @role('Admin')
+                            <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>
                             <li><a class="nav-link" href="{{ route('roles.index') }}">Manage Role</a></li>
                             @endrole
                             <li><a class="nav-link" href="{{ route('articles.index') }}">Manage Articles</a></li>
